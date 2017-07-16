@@ -1,0 +1,24 @@
+#from com.example.custom.studentops import disp,cal
+from student import Student
+name=input("\nEnter the name of student : ")
+gender=input("Gender : ")
+rollno=int(input("Roll no : "))
+marks=float(input("Marks : "))
+print("---------Details---------")
+s=Student(name,gender,rollno,marks)	#s is object
+s.displayDetails()
+s.studentGrade()
+t=s.get_name_roll()
+#print(t)
+#print(t[1])
+#define attributes
+'''s.name=name
+s.gender=gender
+s.rollno=rollno
+s.marks=marks
+print(s.name)
+print(s.gender)
+print(s.rollno)
+print(s.marks)'''
+#disp(name,gender,rollno)
+#cal(marks)
